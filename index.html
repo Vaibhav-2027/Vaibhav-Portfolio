@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vaibhav's Portfolio</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom Theme -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#ff85d2",
+              darkbg: "#2a004d",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body
+    class="min-h-screen bg-gradient-to-br from-[#2a004d] via-[#6a0dad] to-[#ff85d2] text-white"
+  >
+    <!-- Navbar -->
+    <header class="sticky top-0 z-50 bg-black/40 backdrop-blur-md shadow-lg">
+      <nav
+        class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4"
+      >
+        <h1 class="text-2xl font-bold tracking-wide">Portfolio</h1>
+        <ul class="hidden md:flex space-x-6 font-medium">
+          <li>
+            <a href="#home" class="hover:text-primary transition">Home</a>
+          </li>
+          <li>
+            <a href="#about" class="hover:text-primary transition">About</a>
+          </li>
+          <li>
+            <a href="#skills" class="hover:text-primary transition">Skills</a>
+          </li>
+          <li>
+            <a href="#projects" class="hover:text-primary transition"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a href="#education" class="hover:text-primary transition"
+              >Education</a
+            >
+          </li>
+          <li>
+            <a href="#contact" class="hover:text-primary transition">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section
+      id="home"
+      class="flex items-center justify-center min-h-screen px-6"
+    >
+      <div class="max-w-6xl w-full grid md:grid-cols-2 gap-12 items-center">
+        <div class="space-y-6">
+          <h1 class="text-4xl md:text-5xl font-bold">
+            Hi, I'm <span>Vaibhav Jadhav</span>
+          </h1>
+          <p class="text-lg text-gray-200">
+            IT Engineer | Web Developer | AI Enthusiast
+          </p>
+          <a
+            href="#projects"
+            class="inline-block text-black px-6 py-3 bg-emerald-400 text-black rounded-full font-semibold shadow-md transition-all duration-300 ease-in-out hover:bg-emerald-300 hover:-translate-y-1 active:scale-95"
+          >
+            View My Work
+          </a>
+        </div>
+
+        <div class="flex justify-center">
+          <img src="/images/vaibhav.jpeg" alt="Vaibhav" class="w-80 h-80
+          rounded-full object-cover object-top shadow-2xl border-4
+          border-white/30 transition duration-500 ease-in-out hover:scale-110
+          hover:shadow-green-500/40 object-[50%_10%]"" />
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section
+      id="about"
+      class="px-6 max-w-5xl mx-auto text-center min-h-screen flex flex-col justify-center"
+    >
+      <h2 class="text-3xl font-bold mb-6 -mt-16">About Me</h2>
+      <p class="text-gray-200 leading-relaxed">
+        I am Vaibhav, an IT Engineering student passionate about Web Development
+        and Artificial Intelligence. I have hands-on experience in HTML, CSS,
+        JavaScript, Python, C++ and databases like MySQL and MongoDB. I enjoy
+        building real-world, user-friendly projects that solve practical
+        problems and create meaningful impact. I am continuously learning new
+        technologies and aim to leverage my skills to develop innovative
+        solutions in web and AI applications.
+      </p>
+      <a
+        href="#home"
+        class="mt-12 mx-auto bg-emerald-400 text-black px-8 py-3 rounded-full font-semibold shadow-md transition-all duration-300 ease-in-out hover:bg-emerald-300 hover:-translate-y-1 active:scale-95"
+      >
+        Download Resume
+      </a>
+    </section>
+
+    <!-- Skills -->
+    <section
+      id="skills"
+      class="py-20 min-h-screen px-6 max-w-6xl mx-auto flex flex-col justify-center"
+    >
+      <h2 class="text-3xl font-bold text-center mb-12 tracking-wide">
+        My Skills
+      </h2>
+
+      <!-- Premium Glowing Card -->
+      <div class="max-w-lg mx-auto relative group">
+        <!-- Glow Layer -->
+        <div
+          class="absolute -inset-1 rounded-3xl bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 opacity-30 blur-lg group-hover:opacity-70 transition duration-500"
+        ></div>
+
+        <!-- Main Card -->
+        <div
+          class="relative bg-white/10 backdrop-blur-xl p-10 rounded-3xl shadow-2xl border border-white/20 transition duration-500 group-hover:scale-105"
+        >
+          <ul class="space-y-4 text-gray-100 text-lg list-disc list-inside">
+            <li class="hover:text-blue-400 transition">
+              HTML, CSS, JavaScript
+            </li>
+            <li class="hover:text-purple-400 transition">Python</li>
+            <li class="hover:text-green-400 transition">C++ (DSA, OOPs)</li>
+            <li class="hover:text-pink-400 transition">
+              Databases: MySQL, MongoDB
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="min-h-screen py-20 px-6 max-w-7xl mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-12">Projects</h2>
+
+      <div class="grid md:grid-cols-3 gap-10">
+        <!-- Project Card 1 -->
+        <div
+          class="bg-white/10 rounded-2xl overflow-hidden shadow-xl hover:scale-105 transition duration-300"
+        >
+          <img src="/images/shopverse.PNG" class="h-48 w-full object-cover" />
+          <div class="p-6 space-y-4">
+            <h3 class="text-xl font-semibold">ShopVerse - E-Commerce</h3>
+            <p class="text-gray-200 text-sm">
+              Shopverse is an ecommerce website interface that displays products
+              with buy now, checkout, reviews, search products and includes
+              signup and login features for users.
+            </p>
+            <div class="flex gap-4">
+              <a
+                href="#home"
+                class="block mx-auto px-4 py-2 bg-emerald-400 text-white rounded-full font-semibold shadow-md transition-all duration-300 ease-in-out hover:bg-emerald-300 hover:-translate-y-1 active:scale-95"
+              >
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Card 2 -->
+        <div
+          class="bg-white/10 rounded-2xl overflow-hidden shadow-xl hover:scale-105 transition duration-300"
+        >
+          <img src="/images/phishshield.PNG" class="h-48 w-full object-cover" />
+          <div class="p-6 space-y-4">
+            <h3 class="text-xl font-semibold">PhishShield Browser Extension</h3>
+            <p class="text-gray-200 text-sm">
+              PhishShield is a browser security application that detects
+              phishing websites using Google Safe Browsing API and provides
+              real-time protection through a simple interface.
+            </p>
+            <div class="flex gap-4">
+              <a
+                href="#home"
+                class="block mx-auto px-4 py-2 bg-emerald-400 text-white rounded-full font-semibold shadow-md transition-all duration-300 ease-in-out hover:bg-emerald-300 hover:-translate-y-1 active:scale-95"
+              >
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Card 3 -->
+        <div
+          class="bg-white/10 rounded-2xl overflow-hidden shadow-xl hover:scale-105 transition duration-300"
+        >
+          <img src="/images/Result.PNG" class="h-48 w-full object-cover" />
+          <div class="p-6 space-y-4">
+            <h3 class="text-xl font-semibold">Result Generator App</h3>
+            <p class="text-gray-200 text-sm">
+              A Python Tkinter-based desktop application that automates HSC
+              result calculation by generating total marks, percentage, and
+              pass/fail status through a simple graphical interface.
+            </p>
+            <div class="flex gap-4">
+              <a
+                href="#home"
+                class="block mx-auto px-4 py-2 bg-emerald-400 text-white rounded-full font-semibold shadow-md transition-all duration-300 ease-in-out hover:bg-emerald-300 hover:-translate-y-1 active:scale-95"
+              >
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="min-h-screen py-20 px-6 max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold mb-10 text-center">Education</h2>
+      <!-- Education Section - Premium UI -->
+      <div class="space-y-8 text-gray-100 max-w-3xl mx-auto">
+        <!-- Education Card -->
+        <div class="relative group">
+          <div
+            class="absolute -inset-1 rounded-2xl bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 opacity-30 blur-lg group-hover:opacity-70 transition duration-500"
+          ></div>
+
+          <div
+            class="relative bg-white/10 backdrop-blur-xl p-8 rounded-2xl border border-white/20 shadow-xl transition duration-500 hover:scale-105"
+          >
+            <p class="leading-relaxed">
+              <span class="text-xl text-pink-400 font-semibold"
+                >Bachelor of Engineering (B.E.) Information Technology</span
+              ><br />
+              <span class="text-gray-300">
+                Progressive Education Society's Modern College of Engineering,
+                Pune </span
+              ><br />
+              <span class="text-sm text-gray-400">2023 - 2027</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- Education Card -->
+        <div class="relative group">
+          <div
+            class="absolute -inset-1 rounded-2xl bg-gradient-to-r from-cyan-500 via-blue-500 to-indigo-500 opacity-30 blur-lg group-hover:opacity-70 transition duration-500"
+          ></div>
+
+          <div
+            class="relative bg-white/10 backdrop-blur-xl p-8 rounded-2xl border border-white/20 shadow-xl transition duration-500 hover:scale-105"
+          >
+            <p class="leading-relaxed">
+              <span class="text-xl text-cyan-400 font-semibold"
+                >Higher Secondary Education (12th)</span
+              ><br />
+              <span class="text-gray-300"
+                >Fergusson College (Autonomous), Pune</span
+              ><br />
+              <span class="text-sm text-gray-400">Year: 2023</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section
+      id="contact"
+      class="min-h-screen py-20 px-6 max-w-5xl mx-auto text-center"
+    >
+      <h2 class="text-3xl font-bold mb-8">Contact Me</h2>
+
+      <p class="text-lg">
+        Email:
+        <a
+          href="mailto:vaibhav2005jadhav@gmail.com"
+          class="text-sky-400 hover:text-sky-500"
+          >vaibhav2005jadhav@gmail.com</a
+        >
+      </p>
+      <p class="mb-8 text-lg">
+        LinkedIn:
+        <a
+          href="https://www.linkedin.com/in/vaibhav-jadhav-1097ab31a"
+          target="_blank"
+          class="text-sky-400 hover:text-sky-500"
+          >Visit Profile</a
+        >
+      </p>
+
+      <form class="grid gap-4">
+        <input
+          class="w-full max-w-sm p-2 rounded-lg bg-white/80 outline-none mx-auto text-black placeholder-black"
+          placeholder="Your Name"
+        />
+        <input
+          class="w-full max-w-sm p-2 rounded-lg bg-white/80 outline-none mx-auto text-black placeholder-black"
+          placeholder="Your Email"
+        />
+        <textarea
+          class="w-full max-w-sm p-2 rounded-lg bg-white/80 outline-none mx-auto text-black placeholder-black"
+          rows="4"
+          placeholder="Message"
+        ></textarea>
+        <button
+          href="#contact"
+          class="w-full max-w-sm p-2 bg-green-400 text-white py-3 rounded-full bg-emerald-400 text-black px-8 py-3 rounded-full font-semibold shadow-md transition-all duration-300 ease-in-out hover:bg-emerald-300 hover:-translate-y-1 active:scale-95 mx-auto text-black placeholder-black"
+        >
+          Send Message
+        </button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-6 bg-black/60">
+      <p class="text-sm">© 2025 Vaibhav Jadhav | All Rights Reserved</p>
+    </footer>
+  </body>
+</html>
